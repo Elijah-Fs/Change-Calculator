@@ -1,0 +1,68 @@
+body {
+    background-image: url('money.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calculator-card {
+    background: rgba(62, 145, 29, 0.5);
+    border-color: lightgreen;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid #39ff14; 
+    background-color: #0a0a0a; 
+    color: #39ff14; 
+    font-weight: 900; 
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    
+   
+    box-shadow: 0 0 5px #39ff14, 
+                0 0 15px #39ff14, 
+                inset 0 0 5px #39ff14;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+button:hover {
+    background-image: url('100dollar.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    border-color: #ffd700; 
+    box-shadow: 0 0 20px #ffd700; 
+    transform: scale(1.02); 
+}
