@@ -6,14 +6,9 @@ const changeValues = {
     penny: 1,
 }
 
+//MP3 file does not allow the tests to pass
 const chappelleAudio = new Audio('chappelle-ah.mp3');
 
-document.querySelector("button").addEventListener("click", () => {
-    chappelleAudio.currentTime = 0;
-    chappelleAudio.play().catch(error => {
-        console.error("Audio playback failed:", error);
-    });
-});
 
 
 function calculateChange(){
@@ -81,5 +76,7 @@ function handleClickEvent(e){
 
     console.log(calculateChange())
 
+    chappelleAudio.currentTime = 0;
+    chappelleAudio.play()
     
 }
